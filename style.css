@@ -1,0 +1,779 @@
+body {
+    margin: 0;
+    font:normal 75% Arial, Helvetica, sans-serif;
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+
+  .abaut, .abaut_two {
+    color: white;
+    font-size: 100px;
+    margin-bottom: 150px;
+  }
+
+.box_two {
+    display: flex;
+    align-items: center;
+    height: 855px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: end;
+}
+
+
+.iazic {
+    font-size: 30px;
+    color: white;
+    margin-right: 30px;
+    margin-top: 35px;
+}
+
+.box_three {
+  display: flex;
+  justify-content: center;
+}
+
+.zagal {
+  font-size: 40px;
+}
+
+.conteiner_two {
+  background-color: white;
+  height: 1150px;
+  position: relative;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.abaut_three {
+  display: flex;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #04c2c9;
+  transition-duration: .6s;
+}
+
+.box_three {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1b242f;
+  z-index: 10;
+}
+
+.text {
+  font-size: 20px;
+  padding: 10px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.menu {
+  text-decoration: none;
+  color: white;
+}
+
+.box_four {
+  display: flex;
+  justify-content: center;
+}
+
+.text_two {
+  font-size: 50px;
+  color: black;
+}
+
+.conteiner_three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_five {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.img {
+  border-radius: 30px;
+}
+
+.text_three {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.ramka {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+.zagalovok {
+  display: flex;
+  justify-content: center;
+}
+
+.text_four {
+  font-size: 30px;
+}
+
+
+.navic {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+.box_six {
+  height: 1300px;
+  background: var(--bg3);
+  background-color: #f5f5f5;
+}
+
+.conteiner_seven {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img_one {
+  display: flex;
+}
+
+.img_two {
+  display: flex;
+}
+
+.img_three {
+  display: flex;
+}
+
+.porflooi{
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+
+
+.text_photo_conteiner {
+  width: 49%;
+  position: relative;
+  display: flex;
+}
+
+.podrobnee {
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.na_kakom_cdelan {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text_ten {
+  font-size: 15px;
+  color: #e31b6d;
+}
+
+.btn_two {
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border: 1px solid #e31b6d;
+  padding: 6px;
+}
+
+.btn_two:hover {
+  cursor: pointer;
+  background-color: #e31b6d ;
+  color: white;
+  transition-duration: .6s;
+}
+
+
+.text_photo_conteiner:hover .porflooi {
+  opacity: 0;
+  transition-duration: .6s;
+}
+
+.text_photo_conteiner:hover .na_kakom_cdelan {
+  opacity: 1;
+}
+
+.text_photo_conteiner:hover .podrobnee {
+  opacity: 1;
+}
+
+.text_photo_conteiner:hover .nasvania_proecta {
+  opacity: 1;
+}
+
+.text_two_two {
+  font-size: 50px;
+  color: white;
+}
+
+.box_six::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    border-bottom: 100px solid #252934;
+    border-right: 50vw solid transparent;
+}
+
+.box_six::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 100px solid #252934;
+  border-left: 50vw solid transparent;
+}
+
+
+.mega_box {
+  position: relative;
+}
+
+.box_ten {
+  background-color: #252934;
+}
+
+.nasvania_proecta {
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 19px;
+  width: 300px;
+  font-weight: bolder;
+}
+
+.menu:hover{
+  color: #e31b6d;
+  transition-duration: 0.6s;
+}
+
+.box_zagalovo {
+  display: flex;
+  justify-content: center;
+}
+
+.tetx {
+  font-size: 20px;
+  color: #04c2c9;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 430px;
+}
+
+label {
+  padding: 10px;
+}
+
+.form_two {
+  font-size: 20px;
+  width: 400px;
+  background-color: #1e242c;
+  border: none;
+  outline: none;
+}
+
+.coob {
+  height: 200px;
+  
+}
+
+.btn_three {
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  right: 39%;
+  bottom: 25%;
+}
+
+.btn_three:hover {
+  background-color: #04c2c9;
+  transition-duration: .6s;
+  cursor: pointer;
+}
+
+.box_message {
+  background-color: #1b242f;
+  align-items: center;
+  height: 300px;
+}
+
+.conteine_masseg {
+  background-color: #262f38 ;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 100px;
+}
+
+.conteine_masseg_two {
+  display: flex;
+  justify-content: center;
+}
+
+.kto_sdelal {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+.god_sosdania {
+  margin-left: 3px;
+  color: #e31b6d;
+}
+
+.avtor {
+  color: #8f9aa7 ;
+}
+
+.conteine_masseg:hover {
+  cursor: pointer;
+  background-color: #04c2c9;
+  transition-duration: .6s;
+}
+
+.bt_btn_onen {
+  text-decoration: none;
+  color: white;
+}
+
+.moi_znania {
+  background-color: #04c2c9;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zapolnina_shkala {
+  background-color: transparent;
+  width: 500px;
+  height: 50px;
+}
+
+.navic_two {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border: 3px solid #04c2c9;
+}
+
+.program {
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+}
+
+.zapolnina_shkala_two {
+  background-color: #00a1a7;
+  width: 500px;
+  height: 50px;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 15;
+  width: 100%;
+  top: 0;
+  animation-name: header__visible;
+  animation-duration: 1s;
+}
+
+@keyframes header__visible{
+  0% {
+      opacity: 0;
+      top: -80px;
+
+  }
+  100% {
+      opacity: 1;
+      top: 0;
+  }
+}
+
+.checbox {
+  position: relative;
+  width: 65px;
+  height: 20px;
+  margin-top: 33px;
+  margin-right: 40px;
+}
+
+#checbox_input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.swith_slaider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 3px solid white;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: .5s;
+}
+
+.swith_slaider::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 4px;
+  cursor: pointer;
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  border-radius: 80%;
+  transition: .5s;
+}
+
+#checbox_input:checked + .swith_slaider::before{
+  transform: translateX(45px);
+  -webkit-transform: translateX(45px);
+  -ms-transform: translateX(45px);
+}
+
+.text_decor {
+  text-decoration: none;
+  color: black;
+}
+
+.btn_two:hover .text_decor {
+  color: white;
+  transition-duration: .6s;
+}
+
+.text_three {
+  margin-top: 35px;
+}
+
+@media all and (max-width: 1200px){
+  .abaut {
+    font-size: 70px;
+  }
+
+  .abaut_two {
+    font-size: 70px;
+  }
+
+  .zapolnina_shkala_two {
+    width: 250px;
+  } 
+
+  .zapolnina_shkala {
+    width: 250px;
+  }
+
+  .box_five {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conteiner_two {
+    height: 1700px;
+  }
+
+  .porflooi {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+
+@media all and (max-width: 850px) {
+
+
+  .box_five {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conteiner_two {
+    height: 1630px;
+  }
+
+  .abaut_two {
+    font-size: 30px;
+  }
+
+  .abaut {
+    font-size: 27px;
+  }
+
+  .bt_btn_onen {
+    font-size: 20px;
+  }
+
+  .iazic {
+    font-size: 20px;
+  }
+
+  .checbox {
+    bottom: 8px;
+  }
+
+  .menu {
+    font-size: 15px;
+  }
+
+  .text_two {
+    font-size: 35px;
+  }
+  .text_three {
+    margin-top: 5px;
+  }
+
+  .text_four {
+    font-size: 25px;
+  }
+
+  .zapolnina_shkala_two {
+    width: 220px;
+  }
+
+  .moi_znania {
+    width: 100px;
+  }
+
+  .zapolnina_shkala {
+    width: 220px;
+  }
+
+  .program {
+    font-size: 15px;
+  }
+
+
+  .porflooi {
+    width: 150px;
+    height: 130px;
+  }
+
+  .img_one {
+    flex-wrap: wrap;
+  }
+
+  .img_two {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .img_three {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .aen {
+    position: absolute;
+    z-index: 10;
+    bottom: 100%;
+    left: 49%;
+  }
+
+  .pemech_one {
+    margin-right: 50px;
+  }
+
+  .absol_two {
+    position: absolute;
+    z-index: 10;
+    bottom: 200%;
+  }
+
+  .absol_three {
+    position: absolute;
+    z-index: 10;
+    bottom: 150px;
+    left: 30%;
+  }
+
+  .nasvania_proecta {
+    left: 90px;
+    font-size: 15px;
+  }
+
+  .na_kakom_cdelan {
+    left: 90px;
+    top: 65px;
+  }
+
+  .podrobnee {
+    left: 90px;
+  }
+
+  .text_decor {
+    font-size: 15px
+  }
+
+  .text_two_two {
+    font-size: 35px;
+  }
+
+  .form_two {
+    width: 300px;
+  }
+
+  .fixed {
+    width: 100%;
+  }
+
+  .box_six {
+    height: 1000px;
+  }
+
+  .nasvania_proecta {
+    width: 120px;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box_three {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 500px){
+    body {
+      width: 400px;
+    }
+
+    #particles-js {
+      height: 900px;
+    }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
